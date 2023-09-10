@@ -1,0 +1,3 @@
+id		StartDate		EndDate		Duration		Late		Damaged
+ABC123		1681722000		1681743600		21600		False		True
+ABC456		1680343200		1680382800		39600		False		False
