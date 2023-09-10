@@ -1,4 +1,4 @@
-id		StartDate		EndDate		Duration		Late		Damaged
+id		StartTime		EndTime		Duration		Late		Damaged
 ABC456		1680343200		1680382800		39600		False		False
 ABC789		1680400000		1680486400		86400		False		True
 XYZ111		1680490000		1680493600		3600		False		False
