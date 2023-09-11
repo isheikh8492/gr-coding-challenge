@@ -1,0 +1,98 @@
+[
+  {
+    "type": "START",
+    "id": "ABC456",
+    "timestamp": "1680343200",
+    "comments": "Small dent on passenger door"
+  },
+  {
+    "type": "END",
+    "id": "ABC456",
+    "timestamp": "1680382800",
+    "comments": ""
+  },
+  {
+    "type": "START",
+    "id": "ABC789",
+    "timestamp": "1680400000",
+    "comments": "Excellent condition!"
+  },
+  {
+    "type": "END",
+    "id": "ABC789",
+    "timestamp": "1680486400",
+    "comments": "Small coffee stain on seat"
+  },
+  {
+    "type": "START",
+    "id": "XYZ111",
+    "timestamp": "1680490000",
+    "comments": ""
+  },
+  {
+    "type": "END",
+    "id": "XYZ111",
+    "timestamp": "1680493600",
+    "comments": ""
+  },
+  {
+    "type": "START",
+    "id": "XYZ222",
+    "timestamp": "1680500000",
+    "comments": "Smells like new car"
+  },
+  {
+    "type": "START",
+    "id": "DEF111",
+    "timestamp": "1680500000",
+    "comments": "All good"
+  },
+  {
+    "type": "END",
+    "id": "DEF111",
+    "timestamp": "1680503600",
+    "comments": ""
+  },
+  {
+    "type": "START",
+    "id": "GHI333",
+    "timestamp": "1680763200",
+    "comments": ""
+  },
+  {
+    "type": "START",
+    "id": "GHI444",
+    "timestamp": "1680769200",
+    "comments": "Interior needs cleaning"
+  },
+  {
+    "type": "END",
+    "id": "XYZ222",
+    "timestamp": "1680769200",
+    "comments": "Flat tire, had to replace"
+  },
+  {
+    "type": "START",
+    "id": "ABC123",
+    "timestamp": "1681722000",
+    "comments": "No issues - brand new and shiny!"
+  },
+  {
+    "type": "END",
+    "id": "ABC123",
+    "timestamp": "1681743600",
+    "comments": "Car is missing both front wheels!"
+  },
+  {
+    "type": "END",
+    "id": "GHI333",
+    "timestamp": "1680779900",
+    "comments": ""
+  },
+  {
+    "type": "END",
+    "id": "GHI444",
+    "timestamp": "1680869200",
+    "comments": "Windshield broken!"
+  }
+]
