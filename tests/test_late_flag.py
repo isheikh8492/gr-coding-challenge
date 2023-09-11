@@ -8,6 +8,7 @@ from main import parse_data
     'tests/sample_input1.txt',
     'tests/sample_input2.txt',
     # add more file paths here as needed
+    'tests/sample_input3.txt',
 ])
 def test_late_flag(input_file):
     output_file_name = parse_data(input_file)
