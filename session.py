@@ -1,7 +1,7 @@
 import datetime
 
 
-class Session:
+class Summary:
     def __init__(self, id, start_time, end_time=None, duration=None, late=None, damaged=None):
         self.id = id
         self.start_time = start_time
