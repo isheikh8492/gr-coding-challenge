@@ -44,5 +44,5 @@ for _ in range(100000):
     })
 
 # Save new data to a JSON file
-with open("synthetic_output.text", "w") as f:
+with open("synthetic_output.txt", "w") as f:
     json.dump(new_data, f, indent=2)
