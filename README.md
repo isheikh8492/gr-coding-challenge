@@ -3,48 +3,52 @@
 ## Project Overview
 
 ### Task Description
-This application is designed to log a 'START' event when a rental car is picked up by the customer and an 'END' event when the car is returned. Each rental session is limited to 24 hours. These events are recorded in an output file as JSON records. The output file contains 'START' and 'END' records for multiple rental sessions.
+
+This application is responsible for logging a 'START' event when a rental car is picked up by the customer and an 'END' event when the car is returned. Each rental session is restricted to a 24-hour duration. The events are logged into an output file in the form of JSON records. This output file contains both 'START' and 'END' records for multiple rental sessions.
 
 ### Objectives
-The objective is to develop a Python application that parses the output file and generates a single summary record for each rental session as prescribed in the project documentation.
+
+The primary objective of this project is to build a Python application that reads the output file and compiles a single summary record for each rental session, as specified in the project documentation.
 
 ---
 
 ## Setup and Running the Application
 
-### Requirements
+### Prerequisites
+
 - Python 3.11
-- PyCharm IDE (optional)
+- PyCharm IDE (optional but recommended)
 - pytest (for testing)
 
-### Installation
+### Installation and Setup
 
-1. Clone the repository to your local machine.
+1. **Clone the Repository**
    ```
-   git clone https://github.com/isheikh8492/gr-coding-challenge.git
+   git clone https://github.com/username/gr-coding-challenge.git
    ```
 
-2. Navigate to the project directory.
+2. **Navigate to the Project Directory**
    ```
    cd gr-coding-challenge
    ```
 
-3. Install the required dependencies.
+3. **Install Required Packages**
    ```
    pip install -r requirements.txt
    ```
 
 ### How to Run
 
-Run the `main.py` script to execute the application.
-```
-python main.py
-```
+1. **Execute the Main Application**
+   ```
+   python main.py
+   ```
 
-To run tests, navigate to the root directory of the project and run:
-```
-python -m pytest
-```
+2. **Run Tests**
+   To execute the tests, navigate to the root directory and run:
+   ```
+   python -m pytest
+   ```
 
 ---
 
@@ -53,35 +57,43 @@ python -m pytest
 ### Approach
 
 #### Algorithm and Data Structures
-- The application uses Python's built-in `json` library for parsing JSON records.
-- Utilizes a dictionary called 'db' to store 'Summary' objects, keyed by 'id'.
-- Main logic uses iteration and Unix timestamps to create summary records.
+
+- The `json` library in Python is used to read JSON records from the file.
+- A dictionary called `db` holds `Summary` objects keyed by a unique 'id'.
+- The application iterates over the dictionary and uses Unix timestamps to generate summary records.
+  
+#### Handling Large Test Data
+
+- A separate Python script (`synthetic_data_generation.py`) is available to generate a large set of test data (up to 100,000 entries).
+- The dictionary-based storage allows for efficient lookup and update operations, making the application scalable for large datasets.
 
 ### Testing Strategy
 
-- Manual tests: `output_file_new.txt`
-- Synthetic tests: `synthetic_output.txt`
-
-Tests can be found in the `tests` folder. To run all tests, execute `python -m pytest`.
+- **Manual Test**: A manually created test file named `output_file_new.txt` is used for initial testing, and edge case testing.
+- **Synthetic Test**: A programmatically generated file named `synthetic_output.txt` is used for performance.
+  
+All test files are located under different names in the `tests` folder. To run the test suite, execute `python -m pytest` in the root directory.
 
 ---
 
 ## Issues and Challenges
 
-- Inconsistencies in example output files led to initial confusion.
-- Timestamps in the 'END' records were not always coherent or easily understandable.
+### Problems Faced
+
+- The example output files initially caused confusion due to inconsistent 'id' and 'timestamp' formats.
+- Timestamps in the 'END' records were sometimes incoherent or hard to interpret.
 
 ### Solutions and Workarounds
 
-- Assumed erroneous placement of timestamps and adjusted IDs accordingly.
-- Generated new test files to cover various edge cases.
+- Any inconsistencies were assumed to be errors. The IDs and timestamps were adjusted accordingly during processing.
+- New test files were generated to cover a broad range of edge cases, ensuring the application’s robustness.
 
 ---
 
 ## Potential Improvements
 
 - Possibility to store output data to a MySQL/SQLite3 database.
-  
+
 ---
 
 ## Reflection
